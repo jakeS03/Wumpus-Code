@@ -11,6 +11,7 @@ namespace WumpusTest
         int[] roomsWithBats = new int[2];
         int[] roomsWithBottomlessPits = new int[2];
         int roomWithWumpus = 0;
+        int roomWithPlayer = 0;
 
         public GameLocations()
         {
@@ -20,6 +21,7 @@ namespace WumpusTest
         public bool movePlayer(int newRoom)
         {
             // moves player to new room, returns bool if succesful
+            roomWithPlayer = newRoom;
             return true;
         }
 
